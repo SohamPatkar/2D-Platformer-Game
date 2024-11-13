@@ -1,4 +1,6 @@
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -87,12 +89,23 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void Death()
+    {
+        SceneManager.LoadScene("Level1");
+        Destroy(this);
+    }
+
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {
             IsGrounded = true;
             animatorPlayer.SetBool("IsJumping", false);
+        }
+        else if (other.gameObject.name == "Death")
+        {
+            Death();
         }
     }
 
