@@ -4008,12 +4008,39 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1589636260 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4345227130873952832, guid: fb96d84610b08864199ed1c21cfdf425,
+    type: 3}
+  m_PrefabInstance: {fileID: 8365269757151162003}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1589636261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
     type: 3}
   m_PrefabInstance: {fileID: 8365269757151162003}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1589636265
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589636260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0acd4a3d976b784409350646bc84286d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1768234685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4295,7 +4322,7 @@ PrefabInstance:
     - target: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1527576
+      value: -2.152758
       objectReference: {fileID: 0}
     - target: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
         type: 3}
@@ -4305,7 +4332,7 @@ PrefabInstance:
     - target: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.7864876
+      value: -6.786488
       objectReference: {fileID: 0}
     - target: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
         type: 3}
@@ -4342,10 +4369,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8880464053936140867, guid: fb96d84610b08864199ed1c21cfdf425,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4345227130873952832, guid: fb96d84610b08864199ed1c21cfdf425,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1589636265}
   m_SourcePrefab: {fileID: 100100000, guid: fb96d84610b08864199ed1c21cfdf425, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
