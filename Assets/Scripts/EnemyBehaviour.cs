@@ -40,7 +40,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (other.gameObject.GetComponent<PlayerMovement>() != null)
         {
             PlayerMovement playerScript = other.gameObject.GetComponent<PlayerMovement>();
-            playerScript.Death();
+            playerScript.Damage();
         }
     }
 }

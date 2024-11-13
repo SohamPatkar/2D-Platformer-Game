@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private bool IsCrouching = false;
     private bool IsGrounded = true;
     private int score = 0;
+    private int health;
 
 
     private void Awake()
@@ -92,10 +93,27 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void SetHealth(int uihealth)
+    {
+        health = uihealth;
+    }
+
     public void Death()
     {
         SceneManager.LoadScene("Level1");
         Destroy(this);
+    }
+
+    public void Damage()
+    {
+        health -= 1;
+        Debug.Log("" + health);
+        if (health < 0)
+        {
+            health = 0;
+            Death();
+        }
+        scoreController.UpdateHealth(health);
     }
 
 
