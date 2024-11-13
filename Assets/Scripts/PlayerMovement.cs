@@ -7,14 +7,18 @@ public class PlayerMovement : MonoBehaviour
     private Animator animatorPlayer;
     [SerializeField] private float speed;
     [SerializeField] private float jumpForce;
+    [SerializeField] private ScoreController scoreController;
     private Rigidbody2D rb2D;
     private bool IsCrouching = false;
     private bool IsGrounded = true;
+    private int score = 0;
+
 
     private void Awake()
     {
         animatorPlayer = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        scoreController.ShowScore(score);
     }
 
     void Update()
@@ -107,6 +111,17 @@ public class PlayerMovement : MonoBehaviour
         {
             Death();
         }
+    }
+
+    public void PickUp()
+    {
+        IncrementScore();
+        scoreController.ShowScore(score);
+    }
+
+    void IncrementScore()
+    {
+        score += 10;
     }
 
     private void OnTriggerExit2D(Collider2D other)
