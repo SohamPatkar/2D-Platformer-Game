@@ -85,7 +85,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        Debug.Log(IsGrounded);
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded)
         {
             rb2D.AddForce(Vector3.up * jumpForce, ForceMode2D.Impulse);
@@ -93,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Death()
+    public void Death()
     {
         SceneManager.LoadScene("Level1");
         Destroy(this);
