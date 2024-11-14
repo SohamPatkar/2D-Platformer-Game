@@ -99,8 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
-        SceneManager.LoadScene("Level1");
-        Destroy(this);
+        scoreController.GameOverScreen();
     }
 
     public void Damage()
