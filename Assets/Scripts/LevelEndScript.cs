@@ -8,7 +8,8 @@ public class LevelEndScript : MonoBehaviour
     {
         if (other.gameObject.GetComponent<PlayerMovement>() != null)
         {
-            SceneManager.LoadScene(nextScene);
+            int i = SceneManager.GetActiveScene().buildIndex + 1;
+            SceneManager.LoadScene(SceneManager.GetSceneAt(i).buildIndex);
         }
     }
 }
