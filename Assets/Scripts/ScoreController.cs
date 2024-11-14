@@ -1,9 +1,9 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 
 public class ScoreController : MonoBehaviour
 {
+    [Header("UI Controls")]
     public TextMeshProUGUI scoreText;
     public GameObject health;
     private int heartPosition;
