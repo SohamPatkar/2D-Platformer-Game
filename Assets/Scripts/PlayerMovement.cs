@@ -1,4 +1,3 @@
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -100,8 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
-        SceneManager.LoadScene("Level1");
-        Destroy(this);
+        scoreController.GameOverScreen();
     }
 
     public void Damage()

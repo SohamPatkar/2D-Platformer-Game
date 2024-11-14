@@ -17,6 +17,13 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        cameraPlayer.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offsetY, cameraPlayer.transform.position.z);
+        if (player != null)
+        {
+            cameraPlayer.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + offsetY, cameraPlayer.transform.position.z);
+        }
+        else
+        {
+            Debug.Log("Who wrote this code!");
+        }
     }
 }

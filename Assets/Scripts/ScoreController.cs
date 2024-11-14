@@ -1,16 +1,21 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 
 public class ScoreController : MonoBehaviour
 {
+    [Header("UI Controls")]
     public TextMeshProUGUI scoreText;
-    public GameObject health;
-    private int heartPosition;
+    public GameObject health, GameOver;
     [SerializeField] private PlayerMovement playerStats;
     private void Awake()
     {
         playerStats.SetHealth(health.transform.childCount);
+    }
+
+    public void GameOverScreen()
+    {
+        GameOver.gameObject.SetActive(true);
+        Destroy(playerStats.gameObject);
     }
 
     public void UpdateHealth(int playerHealth)
