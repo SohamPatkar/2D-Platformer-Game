@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameOverUI : MonoBehaviour
@@ -21,7 +20,7 @@ public class GameOverUI : MonoBehaviour
 
     void RestartLevel()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     void QuitGame()
