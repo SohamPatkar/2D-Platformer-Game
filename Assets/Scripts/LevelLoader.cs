@@ -16,11 +16,22 @@ public class LevelLoader : MonoBehaviour
 
     void LevelOne()
     {
-        SceneManager.LoadScene(Levels.levelOne);
+        LevelManager.Instance.SetLevelStatus(Levels.levelOne, LevelStatus.Unlocked);
+        if (LevelManager.Instance.GetLevelStatus(Levels.levelOne) == LevelStatus.Unlocked)
+        {
+            SceneManager.LoadScene(Levels.levelOne);
+        }
+        else
+        {
+            Debug.Log("Not Unlocked yet");
+        }
     }
     void LevelTwo()
     {
-        SceneManager.LoadScene(Levels.levelTwo);
+        if (LevelManager.Instance.GetLevelStatus(Levels.levelTwo) == LevelStatus.Unlocked)
+        {
+            SceneManager.LoadScene(Levels.levelTwo);
+        }
     }
     void LevelThree()
     {
