@@ -107,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("++++1");
         health -= 1;
         Debug.Log("" + health);
-        if (health < 0)
+        if (health <= 0)
         {
             Debug.Log("++++2");
             health = 0;
