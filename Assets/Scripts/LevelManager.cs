@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
         AddLevels();
     }
 
@@ -69,6 +70,4 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.SetInt(levelName, (int)level);
         Debug.Log(levelName + "" + level);
     }
-
-
 }

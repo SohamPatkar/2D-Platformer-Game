@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded = true;
     private int score = 0;
     private int health;
-
 
     private void Awake()
     {
@@ -53,6 +53,11 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(new Vector3(speedX * Time.deltaTime, 0, 0));
         }
+    }
+
+    void PlayFootSteps()
+    {
+        SoundManager.Instance.PlaySfxSound(SoundType.PlayerMove);
     }
 
     void Sprint()

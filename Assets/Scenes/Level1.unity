@@ -5564,6 +5564,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2918192154505696227, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
+        type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918192154505696227, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918192154505696227, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4116561474668129483, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
         type: 3}
       propertyPath: m_Name
@@ -5571,8 +5586,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5464058966446390922, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
         type: 3}
+      propertyPath: footsteps
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464058966446390922, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
+        type: 3}
       propertyPath: jumpForce
       value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5464058966446390922, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
+        type: 3}
+      propertyPath: footstepsSound
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5464058966446390922, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94,
         type: 3}
@@ -5629,7 +5654,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2918192154505696227, guid: 7b92c81f0803fcd4da2f9a60c6b0ff94, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
