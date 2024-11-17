@@ -1724,6 +1724,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069883805}
   - component: {fileID: 1069883806}
+  - component: {fileID: 1069883807}
   m_Layer: 0
   m_Name: AudioListener
   m_TagString: Untagged
@@ -1754,6 +1755,18 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069883804}
   m_Enabled: 1
+--- !u!114 &1069883807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069883804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b61568863fb9b5c4fb00cb304d313b53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1236175579
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,6 +2255,12 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 0651b56880a11ef45909b779443691aa, type: 3}
   - type: 3
     clip: {fileID: 8300000, guid: f91e117261b51054a89c9dfd0526ae4c, type: 3}
+  - type: 4
+    clip: {fileID: 8300000, guid: f7d80757580ebf14287ba18254f7fe3d, type: 3}
+  - type: 5
+    clip: {fileID: 8300000, guid: 5efaa944cc7cece4996b86725256962b, type: 3}
+  - type: 6
+    clip: {fileID: 8300000, guid: 31b2284e8ab3f244182080ca7da474b7, type: 3}
 --- !u!1 &2055435062
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,5 @@
-using System.Collections;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,12 +12,14 @@ public class PlayerMovement : MonoBehaviour
     private bool IsGrounded = true;
     private int score = 0;
     private int health;
+    public ParticleSystem deathBlast;
 
     private void Awake()
     {
         animatorPlayer = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         scoreController.ShowScore(score);
+        SoundManager.Instance.PlayBackGroundMusic(SoundType.LevelMusic);
     }
 
     void Update()
@@ -104,8 +105,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Death()
     {
+        Instantiate(deathBlast, transform.position, Quaternion.identity);
         scoreController.GameOverScreen();
+        SoundManager.Instance.PlaySfxSound(SoundType.Death);
     }
+
 
     public void Damage()
     {

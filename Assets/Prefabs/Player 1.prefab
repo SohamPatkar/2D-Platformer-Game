@@ -125,6 +125,8 @@ MonoBehaviour:
   speed: 2.5
   jumpForce: 6
   scoreController: {fileID: 0}
+  deathBlast: {fileID: 4201557370677925317, guid: 7dbad22b23f59f54d9b0579166b69591,
+    type: 3}
 --- !u!50 &2080183221323558921
 Rigidbody2D:
   serializedVersion: 4

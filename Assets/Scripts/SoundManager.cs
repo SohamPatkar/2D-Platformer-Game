@@ -1,13 +1,18 @@
 using System;
 using System.Collections;
+using System.Runtime.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public enum SoundType
 {
     ButtonClick,
     Death,
     BackgroundMusic,
-    PlayerMove
+    PlayerMove,
+    LevelMusic,
+    FinishLevel,
+    FailLevel
 }
 
 [Serializable]
@@ -38,11 +43,6 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        PlayBackGroundMusic(SoundType.BackgroundMusic);
     }
 
     public void PlayBackGroundMusic(SoundType audioType)

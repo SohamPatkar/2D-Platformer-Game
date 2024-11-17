@@ -43,7 +43,6 @@ public class LevelManager : MonoBehaviour
         {
             if (currentScene == level.Value)
             {
-                SceneManager.LoadScene(level.Value + 1);
                 nextScene = level.Value + 1;
             }
         }
