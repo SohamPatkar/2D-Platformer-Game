@@ -2190,7 +2190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartLevel: {fileID: 1055673622}
   quitGame: {fileID: 1702020985}
-  nextLevel: {fileID: 0}
+  nextLevel: {fileID: 1589050904}
 --- !u!1 &833262308
 GameObject:
   m_ObjectHideFlags: 0
