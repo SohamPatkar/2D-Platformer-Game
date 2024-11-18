@@ -39,6 +39,7 @@ public class LevelLoader : MonoBehaviour
     {
         if (LevelManager.Instance.GetLevelStatus(Levels.levelThree) == LevelStatus.Unlocked)
         {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
             SceneManager.LoadScene(Levels.levelThree);
         }
         else
@@ -50,6 +51,7 @@ public class LevelLoader : MonoBehaviour
     {
         if (LevelManager.Instance.GetLevelStatus(Levels.levelFour) == LevelStatus.Unlocked)
         {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
             SceneManager.LoadScene(Levels.levelFour);
         }
         else
