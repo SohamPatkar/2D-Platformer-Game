@@ -19,12 +19,14 @@ public class MainMenu : MonoBehaviour
 
     void PlayGame()
     {
+        SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
         mainMenu.SetActive(false);
         levelSelector.SetActive(true);
     }
 
     void Quit()
     {
+        SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
         Application.Quit();
     }
 }

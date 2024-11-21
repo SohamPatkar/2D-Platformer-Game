@@ -19,6 +19,7 @@ public class LevelLoader : MonoBehaviour
         LevelManager.Instance.SetLevelStatus(Levels.levelOne, LevelStatus.Unlocked);
         if (LevelManager.Instance.GetLevelStatus(Levels.levelOne) == LevelStatus.Unlocked)
         {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
             SceneManager.LoadScene(Levels.levelOne);
         }
         else
@@ -30,15 +31,32 @@ public class LevelLoader : MonoBehaviour
     {
         if (LevelManager.Instance.GetLevelStatus(Levels.levelTwo) == LevelStatus.Unlocked)
         {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
             SceneManager.LoadScene(Levels.levelTwo);
         }
     }
     void LevelThree()
     {
-        SceneManager.LoadScene(Levels.levelThree);
+        if (LevelManager.Instance.GetLevelStatus(Levels.levelThree) == LevelStatus.Unlocked)
+        {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
+            SceneManager.LoadScene(Levels.levelThree);
+        }
+        else
+        {
+            Debug.Log("Not Unlocked yet");
+        }
     }
     void LevelFour()
     {
-        SceneManager.LoadScene(Levels.levelFour);
+        if (LevelManager.Instance.GetLevelStatus(Levels.levelFour) == LevelStatus.Unlocked)
+        {
+            SoundManager.Instance.PlaySfxSound(SoundType.ButtonClick);
+            SceneManager.LoadScene(Levels.levelFour);
+        }
+        else
+        {
+            Debug.Log("Not Unlocked yet");
+        }
     }
 }

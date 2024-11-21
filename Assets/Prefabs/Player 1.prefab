@@ -124,6 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2.5
   jumpForce: 6
+  scoreController: {fileID: 0}
+  deathBlast: {fileID: 4201557370677925317, guid: 7dbad22b23f59f54d9b0579166b69591,
+    type: 3}
 --- !u!50 &2080183221323558921
 Rigidbody2D:
   serializedVersion: 4
@@ -163,10 +166,10 @@ CapsuleCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2176
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -218,7 +221,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.018297285, y: 0.09728272}
+  m_Offset: {x: 0.0007662177, y: -0.025435701}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.42, y: 0.1}
@@ -229,5 +232,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8035256, y: 0.39233145}
+  m_Size: {x: 0.8035253, y: 0.33973804}
   m_EdgeRadius: 0

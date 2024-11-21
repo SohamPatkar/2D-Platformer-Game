@@ -22,6 +22,7 @@ public class LevelManager : MonoBehaviour
 
     private void Start()
     {
+        PlayerPrefs.DeleteAll();
         AddLevels();
     }
 
@@ -42,7 +43,6 @@ public class LevelManager : MonoBehaviour
         {
             if (currentScene == level.Value)
             {
-                SceneManager.LoadScene(level.Value + 1);
                 nextScene = level.Value + 1;
             }
         }
@@ -69,6 +69,4 @@ public class LevelManager : MonoBehaviour
         PlayerPrefs.SetInt(levelName, (int)level);
         Debug.Log(levelName + "" + level);
     }
-
-
 }
